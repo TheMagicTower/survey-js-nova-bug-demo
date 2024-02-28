@@ -3,11 +3,18 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build",
+        "build-TestComonentA": "cd nova-components/TestComponentA && npm run dev",
+        "build-TestComonentA-prod": "cd nova-components/TestComponentA && npm run prod",
+        "build-TestComonentB": "cd nova-components/TestComponentB && npm run dev",
+        "build-TestComonentB-prod": "cd nova-components/TestComponentB && npm run prod"
     },
     "devDependencies": {
         "axios": "^1.6.4",
         "laravel-vite-plugin": "^1.0.0",
         "vite": "^5.0.0"
+    },
+    "dependencies": {
+        "survey-creator-vue": "^1.9.132"
     }
 }

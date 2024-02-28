@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "121b20af7b21986fa946aee9f315a136",
+    "content-hash": "51b974c62bae31af8f373308c81cf01e",
     "packages": [
         {
             "name": "brick/math",
@@ -187,6 +187,78 @@
                 }
             ],
             "time": "2023-12-11T17:09:12+00:00"
+        },
+        {
+            "name": "demo/test-component-a",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "nova-components/TestComponentA",
+                "reference": "545c851a6cfb1f7b46c67d95610640fcb7927a6f"
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Demo\\TestComponentA\\CardServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Demo\\TestComponentA\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova card.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "demo/test-component-b",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "nova-components/TestComponentB",
+                "reference": "bf902146a6bf4ca11117a2356f78e4f06f0a552d"
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Demo\\TestComponentB\\CardServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Demo\\TestComponentB\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova card.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "dflydev/dot-access-data",
@@ -9135,7 +9207,10 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "demo/test-component-a": 20,
+        "demo/test-component-b": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
